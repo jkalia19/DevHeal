@@ -1,0 +1,34 @@
+** -> Primary Key
+* -> Foreign key
+profileTable:-
+**EID_pT(varchar[10])
+firstName_pT(char[15])
+lastName_pT(char[15])
+userID_pT(varchar[25])
+gender_pT(char[1])
+dob_pT(varchar[25])
+phoneNo_pT(number[10])
+emailID_pT(varchar[50])
+address_pT(varchar[200])
+password_pT(varchar[16])
+
+deviceTable:-
+**DID_dT(varchar[10])
+*EID_pT(varchar[10])
+cName_dT(Char[30])
+cPhone_dT(number[10])
+dName_dT(varchar[25])
+dBrand_dT(varchar[25])
+dModel_dT(varchar[20])
+dFault_dT(Char[100])
+dDos_dT(varchar[25])
+dDod_dT(varchar[25])
+
+transactionTable:-
+**TID_tT(varchar[10])
+*EID_pT(varchar[10])
+*DID_dT(varchar[10])
+dStatus_tT(char[1])
+automatedMail_tT(number[10])
+cFeedback_tT(number[10])
+correctionMail_tT(number[10])
